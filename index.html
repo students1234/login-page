@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+<!--===============================================================================================-->
+</head>
+<body background="https://media.istockphoto.com/photos/taking-care-of-the-crop-aerial-view-of-a-tractor-fertilizing-a-picture-id1154958041?k=20&m=1154958041&s=612x612&w=0&h=swgLn2K8QgSS_6-ihWSO2dEl1BurBqWFHA1rfbsL0P4=">
+	
+	<div class="limiter">
+		<div class="container-login">
+			<div class="wrap-login">
+				<div class="login-pic js-tilt" data-tilt>
+					<img src="img-01.png" alt="IMG">
+				</div>
+
+				<form class="login-form validate-form">
+					<span class="login-form-title">
+						Log In
+					</span>
+
+					<div class="wrap-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input" type="text" name="email" placeholder="Email"  pattern="[^ @]*@[^ @]*" size="30" required>
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<img id="img_email" src="https://img.icons8.com/ios-glyphs/30/666666/new-post.png"/>
+						</span>
+					</div>
+
+					<div class="wrap-input validate-input" data-validate = "Password is required">
+						<input class="input" type="password" name="pass" placeholder="Password" required>
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<img id="img_pwd" src="https://img.icons8.com/ios-glyphs/30/666666/lock--v1.png"/>
+						</span>
+					</div>
+					
+					<div class="container-login-form-btn">
+						<button class="login-form-btn">
+							Login
+						</button>
+					</div>
+                      
+					<div class="text-center p-t-12" onclick="myFunction()">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#" >
+							Password?
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="main.js"></script>
+
+</body>
+</html>
